@@ -948,36 +948,46 @@ elif selected_nav == "📈 Benchmark & Architecture":
         """
 ```mermaid
 graph TD
-    User([User Request / CLI / UI]) --> Orch[Orchestrator Agent]
-    
-    subgraph Ingestion & Hybrid RAG
-        Docs[PDF & HTML Solicitation Docs] --> Parser[PyMuPDF & BeautifulSoup Parser]
-        Parser --> Chunker[Section & Table-Aware Chunker]
-        Chunker --> Embeddings[Gemini Embeddings Engine]
-        Chunker --> BM25[BM25 Okapi Index]
-        Embeddings --> VecStore[(Vector Store - .npy)]
-        BM25 --> BM25Store[(BM25 Store - .json)]
-        VecStore & BM25Store --> RRF[Hybrid Search Engine - RRF]
+    User["User Request / CLI / UI / REST API"] --> Orch["Orchestrator Agent"]
+
+    subgraph Ingestion["Part A & B: Ingestion, Chunking & Hybrid RAG Engine"]
+        Docs["PDF & HTML Solicitation Documents"] --> Parser["PyMuPDF & BeautifulSoup Parser"]
+        Parser --> Clean["Boilerplate & Header/Footer Cleaner"]
+        Clean --> Chunker["Section & Table-Aware Chunker"]
+        
+        Chunker -->|"Dense Embeddings"| Embedder["Gemini Embeddings Engine"]
+        Chunker -->|"Alphanumeric Tokens"| BM25Index["BM25 Okapi Index"]
+        
+        Embedder --> VecStore[("Vector Store (.npy + .json)")]
+        BM25Index --> BM25Store[("BM25 Store (.json)")]
+        
+        VecStore & BM25Store --> RRF["Reciprocal Rank Fusion (RRF Engine)"]
+        RRF --> Rerank["LLM Candidate Re-Ranker"]
     end
-    
-    subgraph Multi-Agent Extraction Pipeline
-        Orch --> DSpecialist[📅 Dates & Logistics Specialist]
-        Orch --> CSpecialist[⚖️ Commercial & Legal Specialist]
-        Orch --> PSpecialist[💻 Product & Specs Specialist]
+
+    subgraph Pipeline["Part C: Multi-Agent Collaboration System"]
+        Orch --> DSpecialist["Dates & Logistics Specialist"]
+        Orch --> CSpecialist["Commercial & Legal Specialist"]
+        Orch --> PSpecialist["Product Specs & Scope Specialist"]
         
-        DSpecialist & CSpecialist & PSpecialist -->|Sub-queries| RRF
-        RRF -->|Ranked Cited Passages| DSpecialist & CSpecialist & PSpecialist
+        DSpecialist & CSpecialist & PSpecialist -->|"Domain Sub-queries"| RRF
+        RRF -->|"Ranked Passages with Citations"| DSpecialist & CSpecialist & PSpecialist
         
-        DSpecialist & CSpecialist & PSpecialist --> State[(Shared Pydantic State)]
-        State --> AddendumAgent[🔄 Addendum Reconciliation Agent]
-        AddendumAgent -->|Overrides Applied| State
+        DSpecialist & CSpecialist & PSpecialist --> SharedState[("Shared Pydantic State")]
+        SharedState --> AddendumAgent["Addendum Reconciliation Agent"]
+        AddendumAgent -->|"Overrides Applied & Logged"| SharedState
         
-        State --> Validator[🛡️ Validator / Critic Agent]
-        Validator -->|Audit Checks Passed| FinalRecord[Validated JSON Output]
-        Validator -.->|Missing/Hallucinated - Retry Loop| Orch
+        SharedState --> Validator["Validator / Critic Agent"]
+        Validator -->|"Check 1: Non-null fields have citations"| Audit{"Audit Passed?"}
+        Validator -->|"Check 2: Anti-hallucination check"| Audit
+        Validator -->|"Check 3: Date/Format validation"| Audit
+        
+        Audit -->|"Yes (Audit Passed)"| FinalRecord["Validated Structured Record (Section 8.1 JSON)"]
+        Audit -.->|"No (Rejection Feedback Loop)"| Orch
     end
-    
-    FinalRecord --> UI[Streamlit Web UI / REST API]
+
+    FinalRecord --> Output["output/bidX_extracted.json"]
+    Output --> StreamlitApp["Streamlit UI / Dashboard"]
 ```
 """,
         unsafe_allow_html=True,
