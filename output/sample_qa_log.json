@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "bid_scope": "Bid1",
+    "question": "What is the submission deadline for Bid1 after all addendums?",
+    "answer": "The submission deadline for Bid1, after all addendums, is July 9, 2024, at 2:00 PM CST. This new due date was established by Addendum No. 2, which explicitly extended the RFP's due date [Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1]. Addendum No. 1 had previously stated that Dallas ISD did not anticipate extending the submission deadline [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1].",
+    "key_findings": [
+      "Addendum No. 2 extended the RFP due date to July 9, 2024, at 2:00 PM CST [Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1].",
+      "Addendum No. 1 previously stated that Dallas ISD did not anticipate extending the submission deadline [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1]."
+    ],
+    "citations": [
+      {
+        "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "note": "Provides the latest submission deadline."
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "note": "Mentions the previous stance on extending the deadline, which was superseded by Addendum 2."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 8405.480146408081
+  },
+  {
+    "id": 2,
+    "bid_scope": "Bid2",
+    "question": "Which affidavits are required for the Dell laptop bid?",
+    "answer": "For the Dell laptop bid, the Master Contractor must provide a Mercury Affidavit [PORFP_-_Dell_Laptop_Final.pdf, Page 2]. This affidavit requires the authorized representative to affirm whether the product(s) offered contain mercury, and if so, to describe the product or component, and provide the amount of mercury contained [Mercury_Affidavit.pdf, Page 1]. The affiant must also declare and affirm under penalties of perjury that the contents of the affidavit are true and correct to the best of their knowledge, information, and belief [Mercury_Affidavit.pdf, Page 1].",
+    "key_findings": [
+      "The Dell laptop bid requires a Mercury Affidavit.",
+      "The Mercury Affidavit details mercury content information for the offered products."
+    ],
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "note": "Identifies the required Mercury Affidavit for the Dell laptop bid."
+      },
+      {
+        "file": "Mercury_Affidavit.pdf",
+        "page": 1,
+        "note": "Describes the content and affirmations required for the Mercury Affidavit."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 9371.099710464478
+  },
+  {
+    "id": 3,
+    "bid_scope": "Cross-Bid",
+    "question": "Compare the warranty requirements of both bids.",
+    "answer": "For Bid 1 (RFP JA-207652 Student and Staff Computing Devices), the minimum warranty requirements are one year for student Chromebooks and three years for student and staff Windows laptops [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1, Page 3]. All warranties must be official manufacturer warranties and made by the OEM [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1, Page 3]. Warranties become effective on the date the equipment is placed into service, as agreed upon by Dallas ISD and the awarded vendor [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 4]. Dallas ISD expects all warranty service, repairs, or replacements to be performed by the awarded vendors at no cost within five business days of reporting the issue, and vendors must maintain an adequate stock of replacement devices and/or parts [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 4]. Additional break-fix repair programs and warranty information can be included as additional pricing or attachments [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1, Page 3]. Vendors are also required to describe any key exclusions from their company's warranty [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 8].\n\nFor Bid 2 (PORFP_-_Dell_Laptop_Final.pdf), the warranty requirement is a Dell Limited Hardware Warranty Extended for all machines purchased, lasting 3 Years [PORFP_-_Dell_Laptop_Final.pdf, Page 3]. A warranty certificate or affidavit must be presented upon award [PORFP_-_Dell_Laptop_Final.pdf, Page 3]. The warranty start date is the Date of Delivery, and the end date is 3 years following the date of delivery [PORFP_-_Dell_Laptop_Final.pdf, Page 3].",
+    "key_findings": [
+      "Bid 1 requires a minimum one-year warranty for student Chromebooks and three years for student/staff Windows laptops, with all warranties being official manufacturer/OEM warranties.",
+      "Bid 1 warranties start on the 'in-service' date and require repairs within five business days, with vendors maintaining stock.",
+      "Bid 2 requires a 3-year Dell Limited Hardware Warranty Extended for all machines, starting on the date of delivery."
+    ],
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 3,
+        "note": "Details warranty requirements for Bid 2."
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 3,
+        "note": "Specifies minimum warranty durations and type for Bid 1, and allows for additional programs."
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "note": "Confirms minimum warranty durations and OEM requirement for Bid 1, and allows for additional warranty information."
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 4,
+        "note": "Outlines warranty start date, service expectations, repair timelines, and stock requirements for Bid 1."
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 8,
+        "note": "Mentions the requirement for vendors to describe warranty exclusions for Bid 1."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 17820.26171684265
+  },
+  {
+    "id": 4,
+    "bid_scope": "Bid1",
+    "question": "Is a bid bond required, and if so, how much?",
+    "answer": "Yes, a bid bond is required. The Offeror must comply with any insurance, bid bond, or liability requirements of the District as noted elsewhere in the solicitation document [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 9]. However, the provided evidence passages do not specify the exact amount of the bid bond.",
+    "key_findings": [
+      "A bid bond is required for Offerors [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 9].",
+      "The specific amount for the bid bond is not detailed in the provided passages, with the document stating it is 'noted elsewhere in this solicitation document' [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 9]."
+    ],
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 9,
+        "note": "Confirms bid bond requirement."
+      }
+    ],
+    "confidence": 0.95,
+    "latency_ms": 12927.665710449219
+  },
+  {
+    "id": 5,
+    "bid_scope": "Bid1",
+    "question": "What changed in Addendum 2 compared to the original RFP?",
+    "answer": "Addendum No. 2 to RFP JA-207652 Student and Staff Computing Devices changed the due date for the RFP. The new due date is July 9, 2024, at 2:00 PM CST [Addendum 2 RFP JA-207652..., Page 1]. All other provisions and terms and conditions of the RFP remain unchanged [Addendum 2 RFP JA-207652..., Page 1].",
+    "key_findings": [
+      "The RFP due date was extended.",
+      "The new RFP due date is July 9, 2024, at 2:00 PM CST.",
+      "All other provisions and terms and conditions of the RFP remain unchanged."
+    ],
+    "citations": [
+      {
+        "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "note": "Provides details on the purpose and specific changes introduced by Addendum No. 2, including the new due date and confirmation that other terms are unchanged."
+      }
+    ],
+    "confidence": 0.95,
+    "latency_ms": 3529.6812057495117
+  },
+  {
+    "id": 6,
+    "bid_scope": "Bid2",
+    "question": "What are the core technical specifications (processor, RAM, storage) for the Dell laptops in Bid2?",
+    "answer": "The core technical specifications for the Dell Latitude 5550 laptops in Bid2 are as follows:\n\n*   **Processor:** Intel Core Ultra 5 125U processor, featuring a 12 MB cache, 12 cores, 14 threads, and capable of up to 4.3 GHz Turbo speed [Dell_Laptop_Specs.pdf, Page 1].\n*   **RAM:** 16 GB, configured as 2 x 8 GB DDR5, with a speed of 5600 MT/s (or 5200 MT/s when used with 13th Gen Intel Core processors) [Dell_Laptop_Specs.pdf, Page 1].\n*   **Storage:** 256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD [Dell_Laptop_Specs.pdf, Page 1].",
+    "key_findings": [
+      "The Dell Latitude 5550 is the specified laptop model for Bid2.",
+      "Detailed processor specifications include Intel Core Ultra 5 125U with 12 cores and up to 4.3 GHz Turbo.",
+      "RAM is 16 GB DDR5 at 5600 MT/s.",
+      "Storage is a 256 GB Gen 4 PCIe NVMe SSD."
+    ],
+    "citations": [
+      {
+        "file": "Dell_Laptop_Specs.pdf",
+        "page": 1,
+        "note": "Provides detailed technical specifications for the Dell Latitude 5550, including processor, RAM, and storage."
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 3,
+        "note": "Identifies the Dell Latitude 5550 as the laptop required for Bid2."
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "note": "Confirms the Dell Latitude 5550 as the laptop for Bid2."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 12466.497659683228
+  },
+  {
+    "id": 7,
+    "bid_scope": "Bid1",
+    "question": "When and how will the pre-proposal conference for Dallas ISD take place?",
+    "answer": "The pre-proposal conference for Dallas ISD will take place on June 10, 2024, at 2:00 PM CST (3:00 PM EDT) [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 2; Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html, Page 1]. It will be held via TEAMS video conference [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 2]. To join the meeting, use the link: https://www.microsoft.com/en-us/microsoft-teams/join-a-meeting, with Meeting ID: 270 031 467 036 and Passcode: N9ndKY [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 2]. Potential proposers are highly encouraged to participate and attend [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 2].",
+    "key_findings": [
+      "The pre-proposal conference is scheduled for June 10, 2024, at 2:00 PM CST (3:00 PM EDT).",
+      "The conference will be conducted virtually via TEAMS video conference.",
+      "Specific TEAMS meeting details, including a link, Meeting ID, and Passcode, are provided."
+    ],
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 2,
+        "note": "Provides the date, time (CST), method (TEAMS), and meeting access details for the pre-proposal meeting."
+      },
+      {
+        "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "note": "Confirms the date and time (EDT) for the pre-bid conference."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 12047.652006149292
+  },
+  {
+    "id": 8,
+    "bid_scope": "Bid2",
+    "question": "What docking stations are requested in the Maryland PORFP?",
+    "answer": "Not found in documents.",
+    "key_findings": [
+      "The provided documents describe the PORFP number, type, functional areas (FA I for Printers and Associated Peripherals, FA V for Manufacturer's Extended Warranty), manufacturer (Dell), and general information about the bid process, but do not specify any requested docking stations.",
+      "Functional Area I (FA I) is listed as 'Printers and Associated Peripherals' [PORFP_-_Dell_Laptop_Final.pdf, Page 1], but no specific peripherals, such as docking stations, are detailed in the provided text."
+    ],
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 1,
+        "note": "Reviewed for requested items and functional areas."
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "note": "Reviewed for requested items and security requirements."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 11257.289409637451
+  },
+  {
+    "id": 9,
+    "bid_scope": "Bid1",
+    "question": "What are the payment and retainage terms for Dallas ISD subcontractors?",
+    "answer": "For Dallas ISD subcontractors, prime vendors must pay all submitted invoices, including retainage, within 10 days of receiving payment from the district [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 51]. Prime vendors are not permitted to withhold non-disputed subcontractor payments [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 51]. Additionally, prime vendors may not withhold retainage greater than 5% from the subcontractor [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 51]. The contract between the prime vendor and subcontractor must include payment terms, a prompt payment clause, and a retainage clause [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 51].",
+    "key_findings": [
+      "Prime vendors must pay subcontractors within 10 days of receiving payment from Dallas ISD.",
+      "Prime vendors cannot withhold non-disputed subcontractor payments.",
+      "Retainage withheld from subcontractors by prime vendors cannot exceed 5%."
+    ],
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 51,
+        "note": "Contains all specific payment and retainage terms for subcontractors."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 11517.743349075317
+  },
+  {
+    "id": 10,
+    "bid_scope": "Bid2",
+    "question": "What manufacturer certifications or reseller authorizations are required for Bid2?",
+    "answer": "Not found in documents.",
+    "key_findings": [
+      "The provided documents specify requirements for the bidding vendor, such as being a certified small business vendor under the GOSBA Small Business Reserve Program [PORFP_-_Dell_Laptop_Final.pdf, Page 1] and being a Master Contractor awarded a contract under the Desktop Laptop and Tablet 2015 Master Contract, 060B5400007 [PORFP_-_Dell_Laptop_Final.pdf, Page 1].",
+      "Additionally, the bidding business must be registered or qualified under Maryland Law and in good standing with the State Department of Assessments and Taxation [Contract_Affidavit.pdf, Page 1].",
+      "However, the documents do not explicitly state any manufacturer certifications or reseller authorizations required for Bid2."
+    ],
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 1,
+        "note": "Identifies vendor eligibility requirements including Small Business Reserve and Master Contractor status."
+      },
+      {
+        "file": "Contract_Affidavit.pdf",
+        "page": 1,
+        "note": "Details general business registration and qualification requirements."
+      },
+      {
+        "file": "Dell_Laptop_Specs.pdf",
+        "page": 3,
+        "note": "Reviewed for any mention of manufacturer or reseller certifications, but none were found as a requirement for bidding."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 13014.212846755981
+  },
+  {
+    "id": 11,
+    "bid_scope": "Bid1",
+    "question": "Can proposing vendors submit higher USB specifications than requested for Bid1 display monitors?",
+    "answer": "Yes, proposing vendors can submit higher USB specifications than requested for Bid1 display monitors. While USB 3.1 is a minimum requirement for the non-touch display monitor, a higher specification, such as USB 3.2, is permissible [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1]. The initial RFP specified a USB 3.1 Hub as a minimum port requirement for the Display Monitor - Non-Touch [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 6].",
+    "key_findings": [
+      "USB 3.1 is the minimum requirement for the non-touch display monitor [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1; JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 6].",
+      "A higher USB specification, such as USB 3.2, is permissible for the display monitor [Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1]."
+    ],
+    "citations": [
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "note": "Confirms USB 3.1 as minimum and allows higher specifications."
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 6,
+        "note": "States the initial minimum USB 3.1 requirement for non-touch display monitors."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 15932.188749313354
+  },
+  {
+    "id": 12,
+    "bid_scope": "Bid2",
+    "question": "What is the delivery window specified after contract award for the Dell laptops?",
+    "answer": "The specified delivery window for the Dell laptops after contract award is within 45 days of the award [PORFP_-_Dell_Laptop_Final.pdf, Page 2].",
+    "key_findings": [
+      "Delivery of equipment is required within 45 days of contract award."
+    ],
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "note": "Specifies the delivery timeframe after award."
+      }
+    ],
+    "confidence": 1.0,
+    "latency_ms": 11356.131792068481
+  }
+]

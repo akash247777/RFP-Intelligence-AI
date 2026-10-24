@@ -1,0 +1,29 @@
+# Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment Variables & Secrets (CRITICAL: Do not commit API keys)
+.env
+*.env.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
